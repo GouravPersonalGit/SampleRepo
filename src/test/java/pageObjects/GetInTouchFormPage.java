@@ -40,8 +40,8 @@ public class GetInTouchFormPage
 	
 	public void naviageToGetInTouchPage() throws Exception
 	{
-		String url= getParameterString("BaseUrl", "environment");
-		driver.get(url);
+//		String url= getParameterString("BaseUrl", "environment");
+		driver.get("https://google.com");
 //		log.info("Browser opened and URL hit");
 		waitTillPageLoad();
 	}

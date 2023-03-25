@@ -1,6 +1,6 @@
 package automationFramework;
 
-import static automationFramework.DataReader.getParameterString;
+//import static automationFramework.DataReader.getParameterString;
 import static automationFramework.StartDriver.driver;
 
 import java.io.File;

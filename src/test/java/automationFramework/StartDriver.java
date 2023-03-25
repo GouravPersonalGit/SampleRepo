@@ -22,7 +22,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class StartDriver {
 	public static WebDriver driver;
 	//just for email subject
-	public static String emailCurrentTimeSub= Utils.getCurrrentTimeStamp();
+//	public static String emailCurrentTimeSub= Utils.getCurrrentTimeStamp();
 	public static long executionStartTime;
 	public static long executionEndTime;
 //	public static Logger log = Logger.getLogger(PageActions.class);
@@ -31,13 +31,13 @@ public class StartDriver {
 	 */
 	public static void initializeWeb_Driver()
 			throws IOException, ParseException, org.json.simple.parser.ParseException, InterruptedException {
-		String browser = DataReader.getParameterString("browser", "environment");
-		if ((browser.equalsIgnoreCase("chrome"))) {
+//		String browser = DataReader.getParameterString("browser", "environment");
+//		if ((browser.equalsIgnoreCase("chrome"))) {
 			WebDriverManager.chromedriver().setup();
 			
 			Map<String, Object> preferences = new Hashtable<String, Object>();
 			preferences.put("profile.default_content_settings.popups", 0);
-			preferences.put("download.default_directory", fol_downloadFilePath);
+//			preferences.put("download.default_directory", fol_downloadFilePath);
 			preferences.put("download.prompt_for_download", "false");
 
 			// disable flash and the PDF viewer
@@ -61,19 +61,19 @@ public class StartDriver {
 			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 			driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(60));
 			executionStartTime= System.currentTimeMillis();
-		}
-
-		else if ((browser.equalsIgnoreCase("firefox"))) {
-			WebDriverManager.firefoxdriver().setup();
-			DesiredCapabilities caps = new DesiredCapabilities();
-			caps.setAcceptInsecureCerts(true);
-			FirefoxOptions options = new FirefoxOptions();
-			options.addArguments("--start-maximized");
-			driver = new FirefoxDriver(options);
-			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-			driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(60));
-			executionStartTime= System.currentTimeMillis();
-		}
+//		}
+//
+//		else if ((browser.equalsIgnoreCase("firefox"))) {
+//			WebDriverManager.firefoxdriver().setup();
+//			DesiredCapabilities caps = new DesiredCapabilities();
+//			caps.setAcceptInsecureCerts(true);
+//			FirefoxOptions options = new FirefoxOptions();
+//			options.addArguments("--start-maximized");
+//			driver = new FirefoxDriver(options);
+//			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+//			driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(60));
+//			executionStartTime= System.currentTimeMillis();
+//		}
 
 	}
 
