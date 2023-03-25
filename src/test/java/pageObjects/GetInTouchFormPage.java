@@ -2,7 +2,7 @@ package pageObjects;
 
 import static automationFramework.DataReader.*;
 import static automationFramework.DynamicWebElements.*;
-import static automationFramework.PageActions.*;
+//import static automationFramework.PageActions.*;
 import static automationFramework.StartDriver.driver;
 import static automationFramework.Waits.*;
 import static org.testng.Assert.*;
@@ -42,7 +42,7 @@ public class GetInTouchFormPage
 	{
 		String url= getParameterString("BaseUrl", "environment");
 		driver.get(url);
-		log.info("Browser opened and URL hit");
+//		log.info("Browser opened and URL hit");
 		waitTillPageLoad();
 	}
 	

@@ -3,12 +3,12 @@ package cucumberOptions;
 import static automationFramework.StartDriver.closeDriver;
 import static automationFramework.StartDriver.initializeWeb_Driver;
 
-import org.apache.log4j.Logger;
+//import org.apache.log4j.Logger;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
 import automationFramework.Config;
-import automationFramework.LoggerHelper;
+//import automationFramework.LoggerHelper;
 import automationFramework.Utils;
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
@@ -25,11 +25,11 @@ import io.cucumber.testng.CucumberOptions;
 				"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:" } ,tags = "@MarektoFormVerification"
 		)
 public class TestRunner extends AbstractTestNGCucumberTests   {
-private static Logger log = LoggerHelper.getLogger(TestRunner.class);
+//private static Logger log = LoggerHelper.getLogger(TestRunner.class);
 	
 	@BeforeClass
 	public static void startPoint() throws Throwable {	
-		log.info("Execution Starts at: " +Utils.getCurrentDateTime());	
+//		log.info("Execution Starts at: " +Utils.getCurrentDateTime());	
 		Utils.deleteDir(Config.fol_failedScreenshotPath);
 		Utils.deleteDir(Config.fol_passScreenshotPath);
 		Utils.deleteDir(Config.fol_downloadFilePath);
@@ -38,7 +38,7 @@ private static Logger log = LoggerHelper.getLogger(TestRunner.class);
 	
 	@AfterClass
 	public static void endPoint() throws Exception {
-		log.info("Execution Ends at: " +Utils.getCurrentDateTime());
+//		log.info("Execution Ends at: " +Utils.getCurrentDateTime());
 		closeDriver();
 	}
 }

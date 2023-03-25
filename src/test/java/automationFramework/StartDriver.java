@@ -7,7 +7,7 @@ import java.util.Hashtable;
 import java.util.Map;
 import static automationFramework.Config.*;
 
-import org.apache.log4j.Logger;
+//import org.apache.log4j.Logger;
 import org.json.simple.parser.ParseException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -25,7 +25,7 @@ public class StartDriver {
 	public static String emailCurrentTimeSub= Utils.getCurrrentTimeStamp();
 	public static long executionStartTime;
 	public static long executionEndTime;
-	public static Logger log = Logger.getLogger(PageActions.class);
+//	public static Logger log = Logger.getLogger(PageActions.class);
 	/*
 	 * Description: Initialize Driver
 	 */

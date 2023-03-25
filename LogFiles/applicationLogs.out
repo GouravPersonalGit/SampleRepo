@@ -1,3 +1,5 @@
-2023-03-25 09:03:106 INFO  TestRunner:32 - Execution Starts at: Sat Mar 25 09:15:36 IST 2023
-2023-03-25 09:03:492 INFO  PageActions:45 - Browser opened and URL hit
-2023-03-25 09:03:739 INFO  TestRunner:41 - Execution Ends at: Sat Mar 25 09:15:46 IST 2023
+2023-03-25 12:03:760 INFO  TestRunner:32 - Execution Starts at: Sat Mar 25 12:32:47 IST 2023
+2023-03-25 12:03:574 INFO  WebDriverManager:1228 - Using chromedriver 111.0.5563.64 (resolved driver for Chrome 111)
+2023-03-25 12:03:600 INFO  WebDriverManager:1283 - Exporting webdriver.chrome.driver as C:\Users\gourav\.cache\selenium\chromedriver\win32\111.0.5563.64\chromedriver.exe
+2023-03-25 12:03:356 INFO  PageActions:45 - Browser opened and URL hit
+2023-03-25 12:03:622 INFO  TestRunner:41 - Execution Ends at: Sat Mar 25 12:33:00 IST 2023
