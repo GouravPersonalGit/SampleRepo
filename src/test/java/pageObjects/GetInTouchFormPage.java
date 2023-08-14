@@ -44,6 +44,9 @@ public class GetInTouchFormPage
 		driver.get("https://google.com");
 //		log.info("Browser opened and URL hit");
 		waitTillPageLoad();
+		
+		System.out.println("first com");
+		
 	}
 	
 	
