@@ -51,5 +51,8 @@ public class GetInTouchFormPage
 		
 	}
 	
+	public void newMethod() {
+		
+	}
 	
 }
