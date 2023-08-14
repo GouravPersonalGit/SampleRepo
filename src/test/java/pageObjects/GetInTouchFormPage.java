@@ -47,6 +47,8 @@ public class GetInTouchFormPage
 		
 		System.out.println("first com");
 		
+		System.out.println("second com");
+		
 	}
 	
 	
